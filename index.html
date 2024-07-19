@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<head>
+    <title>Mr_Baffett LODGE</title>
+    <style>
+        body {
+            background-image: url('front.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            display: inline;
+            
+
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .footer a {
+            color: #bbb;
+            text-decoration: none;
+            padding: 0 10px;
+        }
+        .footer a:hover {
+            color: white;
+        }  
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            display: inline-block;
+        }
+        .paragraph {
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: left;
+        }
+        .form{
+            color: white;
+            text-align: center;
+        }
+        .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.para {
+    text-align: left;
+    font-weight: bold;
+    color: white;
+    font-size: larger;
+}
+.para h3{
+    text-align: center;
+    color: white;
+    font-size: x-large;
+}
+.Image {
+    text-align: center;
+}
+
+.Image h1 {
+    color: white;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.Image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.Image pre{
+    font-size: 2em;
+    color: white;
+}
+footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+    <script>
+        function myFunction()
+        {
+            var x = document.getElementById("first_name");
+            x.value = x.value.toUpperCase();
+            var y = document.getElementById("last_name");
+            y.value = y.value.toUpperCase();
+        }
+        function validate()
+        {
+            var first_name;
+            if(first_name == null)
+            {
+                alert("Please first name is required!");
+            }
+            var last_name;
+            if(last_name ==null)
+            {
+                alert("Please last name is requierd!");
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="navbar">
+  <a>Home</a>
+  <a>About Us</a>
+  <a>Services</a>
+  <a>Contact</a>
+  <a>Blog</a>
+</div>
+<div style="padding:20px">
+  <h1 style="color: burlywood;"><marquee>Welcome to Mr_Baffett Lodge</marquee></h1>
+</div>
+<hr style="color: white;">
+<div class="container">
+    <p class="paragraph">
+        Welcome to Mr_Baffett Lodge! We're excited to have you here.Our lodge is a peaceful place where you can relax and enjoy nature. 
+        You'll love our cozy rooms and delicious food. Our friendly staff is ready to make your stay special and comfortable. Whether you're here to relax or explore, you'll have a great time. 
+        we say that Mr_Baffett Lodge "Enjoy your stay and feel at home"
+    </p>
+</div>
+</head>
+<hr style="color: white;">
+<div class="form">
+<h2>Please!, Fill Registration Form</h2>
+
+<form action="" method="post">
+    <label for="first_name">First Name:</label><br>
+    <input type="text" id="first_name" name="first_name" onchange="myFunction()"><br><br>
+
+    <label for="last_name">Last Name:</label><br>
+    <input type="text" id="last_name" name="last_name" onchange="myFunction()"><br><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+
+    <label for="room_number">Room Number:</label><br>
+    <select id="room_number" name="room_number">
+        <option value="">Select Room Number</option>
+        <option value="101">001</option>
+        <option value="102">002</option>
+        <option value="103">003</option>
+        <option value="101">004</option>
+        <option value="102">005</option>
+        <option value="103">006</option>
+        <option value="101">007</option>
+        <option value="102">008</option>
+        <option value="103">009</option>
+        <option value="101">010</option>
+        <option value="102">011</option>
+        <option value="103">012</option>
+    </select><br><br>
+
+    <label for="num_days">Number of Days:</label><br>
+    <input type="number" id="num_days" name="num_days" min="1" max="28"><br><br>
+
+    <input type="submit" value="Register" onclick="validate()">
+</form>
+</div>
+
+<div class="container">
+    <div class="row" >
+        <div class="column"><img src="pic1.jpg" alt="Image 1"><pre style="color: white;">50,000/=Tsh per Day only</pre></div>
+        <hr style="color: white;">
+        <div class="column"><img src="pic2.jpeg" alt="Image 2"><pre style="color: white;">40,000/=Tsh short-time only</pre></div>
+        <hr style="color: white;">
+        <div class="column"><img src="pic3.jpg" alt="Image 3"><pre style="color: white;">350,000/=Tsh per week only</pre></div>
+    </div>
+    <div class="row">
+        <div class="column"><img src="pic4.jpeg" alt="Image 4"><pre style="color: white;">60,000/=Tsh per Day only</pre></div>
+        <hr style="color: white;">
+        <div class="column"><img src="pic5.jpeg" alt="Image 5"><pre style="color: white;">45,000/=Tsh short-time per Day only</pre></div>
+        <hr style="color: white;">
+        <div class="column"><img src="pic6.jpeg" alt="Image 6"><pre style="color: white;">100,000/=Tsh per Day only</pre></div>
+    </div>
+    <h2 style="text-align: center; color: white; font-size: 2em; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">//Drinks and Food//</h2>
+    <div class="row">
+        <div class="column"><img src="drink1.jpeg" alt="Image 7"><pre style="color: white;">50,000/=Tsh whole package</pre></div>
+        <hr style="color: white;">
+        <div class="column"><img src="drink2.jpeg" alt="Image 8"><pre style="color: white;">range price start with 5000/=Tsh - 300,000/=Tsh Per one Drink</pre></div>
+        <hr style="color: white;">
+        <div class="column"><img src="menu.jpg" alt="Image 9"><pre style="color: white;">See our different Menu Available</pre></div>
+    </div>
+    <div class="para">
+        <pre>
+        <h3><u>Experience the real price wiht Mr_Baffett LODGE</u></h3>
+        Welcome to Mr_Baffett Lodge, our exquisite room rental service. 
+        Our spacious and elegantly designed rooms offer the perfect retreat 
+        for both short and long-term stays. 
+        Here's what you can expect:
+
+        Affordable Pricing for Every Need
+        Daily Rate: 50,000/=
+        Enjoy the comfort of our rooms for just 50,000/= per day. Perfect 
+        for a quick getaway or a business trip.
+        Weekly Rate: 350,000/=
+        Stay longer and save more with our weekly rate of 350,000/=
+        ideal for extended vacations or work assignments.
+        Long-Term Stays
+        For longer stays, we offer a special rate of 25,000/= per additional day 
+        beyond the first week. 
+        Enjoy the convenience and cost-efficiency of a long-term rental.
+
+        Unmatched Amenities
+        Our rooms are equipped with all the amenities you need 
+        for a comfortable and enjoyable stay:
+
+        Comfortable Beds: Relax in our plush, high-quality beds designed 
+        for a restful night’s sleep.
+        Free Wi-Fi: Stay connected with complimentary high-speed internet access.
+        Room Service: Indulge in our exceptional room service, 
+        available at your convenience.
+        Modern Bathrooms: Enjoy our clean, modern bathrooms stocked with 
+        premium toiletries.
+        Entertainment: Each room features a flat-screen TV 
+        with a variety of channels and on-demand movies.
+        Prime Location
+        Situated in the heart of the city, our location offers easy access to:
+
+        Popular tourist attractions
+        Fine dining restaurants
+        Shopping centers
+        Business districts
+        Exceptional Service
+        Our friendly and professional staff are dedicated 
+        to making your stay memorable. 
+        From the moment you check-in, you'll experience 
+        top-notch service tailored to your needs.
+
+        Special Offers
+        Early Bird Discount: Book in advance and enjoy a special discount on your stay.
+        Seasonal Promotions: Take advantage of our seasonal promotions and 
+        enjoy even greater savings.
+        Customer Testimonials
+        Don’t just take our word for it. Here’s what our guests have to say:
+
+        "A wonderful experience! The rooms are spacious 
+        and the staff is incredibly helpful."
+        "Perfect for business travel. The location is convenient 
+        and the weekly rate is a great deal."
+        Book Your Stay Today!
+        Experience the best in comfort, service, and affordability. 
+        Contact us to book your stay or visit our website for more details. 
+        Don’t miss out on the perfect blend of luxury and value!
+    </div>
+</pre>
+</div>
+<div class="Image">
+<h1>//Get To Know Us//</h1><br>
+<img src="ceo.jpg" alt="founder and ceo">
+<pre>Founder and Chief Executive Officer (CEO)
+Ismail S. Omary
+</pre>
+<hr style="color: white;">
+<img src="stat.jpg_large" alt="team of the company">
+<pre>Our Staff Team
+</pre>
+<hr style="color: white;">
+</div><br><br><br>
+<footer>
+    &copy; 2024 Mr_Baffett Lodge. All rights reserved.
+</footer>
+
+</body>
+</html>
